@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"/>
+    <title>Service Worker - Learning</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Um aplicativo utilizando o Service Worker</h1>
+
+        <p>
+            Esse aplicativo utiliza o Service Worker em seu funcionamento.
+            Ele permite que você continue visualizando essa página mesmo sem conexão com a internet.
+        </p>
+        <p>
+            Caso você esteja sem conexão com a internet, você não verá esta página.
+            Mas visualizará a página "offline.html".
+        </p>
+        <p>
+            Isso acontece porque a página "offline.html", assim como a folha de estilos (.css), está armazenada no cache.
+            Quando o Service Worker tenta realizar uma requisição e não há conexão com a internet, ele devolve a página "offline.html".
+        </p>
+        <a href="/another.html">Clique aqui.</a>
+    </div>
+</body>
+
+<script src="./main.js"></script>
+
+</html>
